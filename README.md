@@ -1,1 +1,3 @@
 # reinforcement-learning
+
+In the testing_gymnasium.py file we tested out the MountainCar environment to familiarize ourselves with the problem we will be working on. The output is formatted in the following way: [x, y], reward. The x and y are the coordinates and the reward was consistently -1, because that is the cost of each move until reaching the goal. When we reran the code as episodic we gained additional knowledge, the total reward being -200 indicated that the agent was moving randomly and not learning anything because it got the minimum reward possible as there are 200 steps in one episode. We can expect this reward to increase as we switch to an RL algorithm like Q-learning or other algorithms we learned in class. 
