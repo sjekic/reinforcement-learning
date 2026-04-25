@@ -1,2 +1,7 @@
 numpy
+matplotlib
 gymnasium
+torch
+ipykernel
+scikit-learn
+seaborn
