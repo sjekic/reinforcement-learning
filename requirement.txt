@@ -1,6 +1,7 @@
 numpy
 matplotlib
 gymnasium
+gymnasium[classic_control]
 torch
 ipykernel
 scikit-learn
