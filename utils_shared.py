@@ -148,6 +148,8 @@ def collect_trajectories(env, get_action_fn, n_episodes=20, max_steps=999):
         steps = 0
         while not done and steps < max_steps:
             action = get_action_fn(state)
+            if np.isscalar(action):
+                action = np.array([action], dtype=np.float32)
             state, reward, terminated, truncated, _ = env.step(action)
             states.append(state.copy())
             total_reward += reward
